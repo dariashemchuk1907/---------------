@@ -113,6 +113,7 @@ padding-top: 25px;
   flex-direction: row;
   justify-content: space-around;
 align-self: center;
+padding: 24px 0px 24px 0px;
 
   background-color: rgb(178, 173, 184) ;
 }
