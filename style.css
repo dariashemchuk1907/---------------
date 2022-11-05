@@ -84,7 +84,6 @@ padding-top: 25px;
 
 #homepage{
   background-color: rgb(100, 96, 96);
-  padding-left: 10px;
  
 }
 
@@ -114,7 +113,7 @@ padding-top: 25px;
   flex-direction: row;
   justify-content: space-around;
 align-self: center;
-margin-left: -3%;
+
   background-color: rgb(178, 173, 184) ;
 }
 
