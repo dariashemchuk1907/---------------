@@ -85,7 +85,7 @@ padding-top: 25px;
 #homepage{
   background-color: rgb(100, 96, 96);
   padding-left: 10px;
-  margin-left: -12px;
+ 
 }
 
 .caption{
@@ -114,7 +114,7 @@ padding-top: 25px;
   flex-direction: row;
   justify-content: space-around;
 align-self: center;
-padding: 12px;
+margin-left: -3%;
   background-color: rgb(178, 173, 184) ;
 }
 
