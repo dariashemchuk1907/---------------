@@ -1,0 +1,236 @@
+@media screen and (max-width:600px) {
+    
+    .navbar{
+        flex-direction: column;}
+       
+    .menu{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+   
+    }
+        .menu a{
+            line-height: 2em;
+        }
+
+   .caption{
+    font-size: 25px;
+    justify-content: top;
+    margin-top: 15%;
+
+   }
+   .caption2{
+    font-size: 20px;
+   }
+   .imgs{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+  
+   }
+    .section{
+        padding-top:15%;
+    }
+   img{
+    width: 320px;
+    padding: 8px;
+   }
+   #aboutme h2 {
+    margin-top: 15%;
+    font-size:25px ;
+}
+
+#aboutme h2 {
+    margin-top: 15%;
+    font-size:25px ;
+}
+
+
+#contacts h2 {
+    font-size: 25px;
+}
+
+.row {
+    font-size: 10px;
+    display: flex;
+}
+.p1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p1 img {
+        max-width: 300px;
+    }
+    .p2 img {
+        max-width: 250px;
+    }
+    .portfolio img{
+        max-width: 180px;
+
+    }
+    #aboutme h2{
+        margin-top: 26px;
+    }
+     .p1 p{
+      
+        font-size: 14px;
+        width: 80%;
+     }
+     .p2 p{
+      min-width: 250px;
+      max-width:300px ;
+        font-size:14px ;
+}
+}
+
+
+
+
+@media screen  and (min-width:1125px) and  (max-width:1280px){
+    .imgs {
+     justify-content: space-between;
+     align-items: center;
+     padding: 34px 2% ;
+     margin-top: 16px;
+     background-color: rgb(178, 173, 184);
+
+     }  
+     img {
+    margin: 0% 0%;
+    height:350px;
+    border: 5px;
+    border-radius: 30px;
+     }
+       
+       #aboutme h2{
+        margin-top: 10%;
+       }
+       .bottom{
+        margin-top: 15%;
+       }
+    .caption{
+     margin-top: -6%;
+        font-size: 35px;
+        padding: 0px 16%;
+    }
+.caption2 {
+    font-size: 25px;
+}
+}
+
+@media screen  and (min-width:913px)and  (max-width:1124px){
+
+    .imgs {
+        justify-content: space-around;
+        background-color: none;
+        padding: 8px 20% ;
+      margin-bottom: 5%;
+        flex-wrap: wrap ;
+        }  
+        img {
+       margin:2% 0% 4%  0%;
+       height:350px;
+       border: 5px;
+       border-radius: 30px;
+        }
+     
+        .caption{
+            margin-top: 5%;
+                  font-size: 30px;
+              }
+          .caption2 {
+              font-size: 20px;
+          }
+}
+
+
+@media screen  and (min-width:686px)and  (max-width:939px){
+   .row{
+    font-size: 20px;
+
+   }
+    .imgs {
+        justify-content: space-evenly;
+        background-color: none;
+        padding: 8px 12% ;
+      margin-bottom: 5%;
+        flex-wrap: wrap ;
+        }  
+        img {
+       margin:2% 0% 4%  0%;
+      height:320px;
+      }
+
+       .caption{
+        margin-top: 10%;
+              font-size: 25px;
+          }
+      .caption2 {
+          font-size: 20px;
+      }
+        }
+ @media screen  and (min-width:601px)and  (max-width:686px){
+     
+            .imgs {
+                justify-content: space-evenly;
+                padding: 8px 8% ;
+              margin-bottom: 5%;
+                flex-wrap: wrap ;
+                }  
+                img {
+               margin:2% 0% 4%  0%;
+              height:320px;
+              }
+              .caption{
+                margin-top: 10%;
+                      font-size: 25px;
+                  }
+              .caption2 {
+                  font-size: 20px;
+        }
+    }
+    @media screen  and (min-width:601px) and  (max-width:939px){
+    
+        .menu a {
+        font-size: 14px;
+        padding: 2px 4px;
+        text-align: center;
+        }
+        .logo{
+            font-size: 20px;
+           padding-left: 20px;
+        }
+        }
+    
+    @media screen  and  (max-width:1021px){
+.p1 p{
+   min-width:40%;
+}
+.p2 p{
+   width: 50%;
+ 
+}
+    }
+
+    @media screen  and  (max-width:772px){
+       
+        #aboutme h2{
+            margin-top: 7%;
+        }
+         .p1 p{
+          
+            font-size: 16px;
+         }
+         .p2 p{
+            width: 55%;
+            font-size:16px ;
+          
+         }
+    }
