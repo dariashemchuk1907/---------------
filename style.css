@@ -1,9 +1,16 @@
 * {
   box-sizing: border-box;
+  
 }
+
+
+
+
+
 html {
   scroll-behavior: smooth;
   margin-right: 0%;
+
 
 }
 
@@ -17,10 +24,9 @@ margin: 0;
 
 
 .header {
-  position: sticky;
-  top: 0%;
- 
-
+  position: fixed;
+  width: 100%;
+  top: 0p;
 }
 
 .navbar {
@@ -32,6 +38,7 @@ margin: 0;
   list-style: none;
   margin-right: 0%;
   padding-bottom: 0%;
+  position: relative;
 }
 
 .menu {
@@ -68,10 +75,11 @@ margin: 0;
   border: 0px solid transparent;
   border-radius: 16px;
 white-space: nowrap;
+align-items: center;
 }
 
 .menu a.active {
-  background-color: rgb(84, 83, 85);
+  background-color: rgb(195, 192, 199);
   color: white;
 }
 
@@ -81,12 +89,34 @@ white-space: nowrap;
   background-color: rgb(195, 192, 199);
 }
 
+.menu .active a {
+  background-color: rgb(100, 96, 96);
+
+}
+.burger {
+background: transparent;
+border: none;
+outline: none;
+cursor: pointer;
+padding-right: 20px;
+display: none;
+}
+.line {
+  width: 32px;
+  height: 4px;
+background-color: rgb(100, 96, 96);
+margin: .5em;
+transition: .3s ease-in-out;;
+
+}
+
 .section {
   min-height: 100vh; 
 
   max-width: 100vw;
-  padding-top: 30px;
+ top: 0%;
   background-color: rgb(100, 96, 96);
+  padding-top: 60px;
 
  
  
@@ -98,6 +128,7 @@ white-space: nowrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  top: 0;
 
 
 }
@@ -140,6 +171,7 @@ img {
 }
 
 #aboutme{
+  padding-top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,26 +242,27 @@ img {
 }
 
 
-
-#portfolio {
-  display: block; 
-  background-color: rgb(100, 96, 96);
-  font-size: 40px;
-  text-align: center;
-
-
-  
+.portfolio1line{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ margin-bottom: 16px;
+}
+.portfolio2line{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+margin-bottom: 16px;
 }
 
-#portfolio img {
-  padding: 12px;
+.gallery-item img{
   height: 300px;
-  border: 4px solid transparent;
-  border-radius: 30px;
-}
-
+ }
 #portfolio h2 {
-  padding-top: 4%;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 #contacts {
@@ -243,10 +276,11 @@ justify-content: center;
 
 #contacts h2 {
 display:flex;
-justify-content: space-evenly;
+justify-content: center;
+text-align: center;
  background-color: rgb(178, 173, 184) ;
  padding: 16px;
- margin: 5% 27% 5% 25%;
+ margin: 6% 35% 5% 35%;
  border: 4px solid transparent;
   border-radius: 20px;
 
@@ -267,7 +301,8 @@ justify-content: space-evenly;
 .column {
  display: flex;
 flex-direction: column;
-margin-right:2%;
+margin-right:5%;
+margin-left: 10%;
 }
 
 .column1 {
@@ -284,7 +319,7 @@ margin-right:2%;
   margin-right: 2%;
   color: rgb(178, 173, 184);
 }
-.bottom{
+#top{
   display: flex;
   justify-content: center;
   align-items: flex-end;

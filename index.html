@@ -12,36 +12,46 @@
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/115578889?v=4">
     <link rel="stylesheet" href="./style.css"/>
     <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+ 
+ 
 
 
 </head>
 <body>
 
-  
-
-      
-
   <div class="header">
-      <div class="navbar">
-      <div class="logo">DariaShemchuk</div>
-        <ul class="menu">
-          <li></li>
+    <div class="navbar">
+    <div class="logo">DariaShemchuk</div>
+ 
+      <ul class="menu">
+
+    <li>
+      <a href="#homepage" >Головна</a>
+    </li>
+    <li>
+      <a href="#aboutme">Про мене</a>
+    </li>
+    <li>
+      <a href=#portfolio class="active">Портфоліо</a>
+    </li>
+    <li>
+      <a href=#contacts>Контакти</a>
       <li>
-        <a href="#homepage" >Головна</a>
-      </li>
-      <li>
-        <a href="#aboutme">Про мене</a>
-      </li>
-      <li>
-        <a href=#portfolio class="active">Портфоліо</a>
-      </li>
-      <li>
-        <a href=#contacts>Контакти</a>
-         </ul>
-      </div>
-    </div>
+       </ul>
+       <button class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </button>
     
-   
+    </div>
+  
+    </div>
+
 
    <div class="section" id="homepage">
     <div class="caption" >
@@ -81,16 +91,48 @@
 
 <div class="section" id="portfolio">
    <h2 >Портфоліо:</h2>
-      <img src="images/photo_5408932077593805348_y.jpg"  alt="Портфоліо1" >
-   <img src="images/photo_5408932077593805339_y.jpg" alt="Портфоліо2" >
-   <img src="images/photo_5408932077593805347_y.jpg" alt="Портфоліо3" >
-   <img src="images/photo_5408932077593805340_y.jpg" alt="Портфоліо5"  >
-   <img src="images/22_Шемчук_Дар'я (3)_pages-to-jpg-0005.jpg" alt="Портфоліо6" >
-   <img src="images/amforamockup6 (2).jpg" alt="Портфоліо"  >
-   <img src="images/22_Шемчук_Дар'я (3)_pages-to-jpg-0001.jpg" alt="Портфоліо7" >
-   <img src="images/amforamockup6 (2).jpg" alt="Портфоліо8" >
-   <img src="images/123 (1).jpg" alt="Портфоліо9" >
- </div>
+   <div class="gallery" id="lightgallery">
+
+    <div class="portfolio1line">
+      <div class="gallery-item">
+        <a href="images/photo_5408932077593805348_y.jpg" target="_blank">
+        <img src="images/photo_5408932077593805348_y.jpg"  ></a>
+      </div>
+      <div class="gallery-item">
+        <a href="images/photo_5408932077593805339_y.jpg" target="_blank">
+        <img src="images/photo_5408932077593805339_y.jpg"  ></a>
+      </div>
+      <div class="gallery-item">
+        <a href="images/photo_5408932077593805347_y.jpg" target="_blank">
+        <img src="images/photo_5408932077593805347_y.jpg"  ></a>
+      </div>
+      <div class="gallery-item">
+        <a href="images/photo_5408932077593805340_y.jpg" target="_blank">
+        <img src="images/photo_5408932077593805340_y.jpg"  ></a>
+      </div>
+      <div class="gallery-item">
+        <a href="images/22_Шемчук_Дар'я (3)_pages-to-jpg-0005.jpg" target="_blank">
+        <img src="images/22_Шемчук_Дар'я (3)_pages-to-jpg-0005.jpg"  ></a>
+      </div> 
+    </div>
+
+    <div class="portfolio2line">
+      <div class="gallery-item">
+        <a href="images/kingofthieves.jpg" alt="Портфоліо" target="_blank">
+        <img src="images/kingofthieves.jpg" alt="Портфоліо"  ></a>
+      </div> <div class="gallery-item">
+        <a href="images/22_Шемчук_Дар'я (3)_pages-to-jpg-0001.jpg" target="_blank">
+        <img src="images/22_Шемчук_Дар'я (3)_pages-to-jpg-0001.jpg"  ></a>
+      </div> <div class="gallery-item">
+        <a href="images/amforamockup6 (2).jpg" target="_blank">
+        <img src="images/amforamockup6 (2).jpg"  ></a>
+      </div>
+       <div class="gallery-item">
+        <a href="images/123 (1).jpg" target="_blank">
+        <img src="images/123 (1).jpg"  ></a>
+      </div>
+    </div>
+  </div>
 
 
   <div class="section" id="contacts">
@@ -111,10 +153,77 @@
   </div>
 </div>
 <div class="smile">:)</div>
-<div class="bottom">
-  <p class="menu">
-    <a href=#top>Наверх</a>
-  </p>
+
+  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"></script>
+
+<script type="text/javascript">
+  lightGallery(document.getElementById("lightgallery"),
+  {
+    selector: ".gallery-item a"
+  }
+  );
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/menuspy@latest/dist/menuspy.min.js"></script>
+<script>
+    var elm = document.querySelector(".navbar .menu");
+    var ms = new MenuSpy(elm);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script> 
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+  
+    navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+  
+   autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          },
+  
+  spaceBetween: 30,
+  
+  //effect: "fade",
+  
+  pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+  
+  });
+  </script>
+
+    
+<script>
+
+
+  const mobileNav = document.querySelector('.menu');
+  const burgerIcon = document.querySelector('.burger');
+  
+  
+  
+  burgerIcon.addEventListener('click', function(){
+      mobileNav.classList.toggle('active');
+      burgerIcon.classList.toggle('active'); 
+
+
+})
+     
+
+  
+
+  </script>
+  
 </div>
    </div>
 </body>
